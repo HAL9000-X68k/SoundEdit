@@ -43,12 +43,18 @@ Version 0.50 -試食版-
   ![TglBtn](https://github.com/user-attachments/assets/87007209-0284-48e0-9a02-f7b97160059b)<br>
   クリックする事でON/OFFを切り替える事が可能です。
   「ON」の場合には「●」が表示され、「OFF」の際には空欄となります。
-- 簡単はヘルプ機能が実装されており、ボタン等の上でマウス右クリックする事で簡単な説明が表示されます。
+- 簡単なヘルプ機能が実装されており、ボタン等の上でマウス右クリックする事で簡単な説明が表示されます。
+
+★参考文献★<br>
+- SHARP X68000 X-BASIC ver 2.0 ユーザーズリファレンス<br>
+  本ソフトウェアの説明文章は、その多くを「SHARP X68000 X-BASIC ver 2.0 ユーザーズリファレンス」に寄っております。作者のFM音源知識不足のため具体的な説明が乏しい文章になってしまっておりますが、今後少しでも改善できるよう精進したいと思います。
+- Inside X68000
+- Z-MUSIC ver2.08/ver3.01 添付ドキュメント
 
 ★謝辞★<br>
 本ソフトウェアは、以下の方々の素晴らしいソフトウェア群によって支えられております。<br>
 この場をお借りして、作者の皆様に感謝致します。
-- [PI.](https://twitter.com/xm6_original)様
+- [PI.](https://twitter.com/xm6_original)様・[GIMONS](https://x.com/GimonsW)様
   <br>X68000エミュレータ「XM6 TypeG」
 - [吉野智興](http://retropc.net/x68000/software/develop/c/gcc_mariko/)様
   <br>GNU Cコンパイラ「GCC真里子版 ver 1.42」
