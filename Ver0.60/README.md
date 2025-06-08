@@ -62,6 +62,8 @@ Version 0.60 -試食版-
   <br>GNU Cコンパイラ「GCC真里子版 ver 1.42」
 - [西川善司](http://www.z-z-z.jp/zmusic/)様
   <br>FM音源ドライバ「Z-MUSIC Ver2」
+- [yunk](https://x.com/yunkya2)様・[TcbnErik / 立花@桑島技研](https://x.com/kg68k)様
+  <br>IOCS の高速化ドライバ「HIOCS」
   <br><br>
   **また、制作中にＸ（旧Twitter）上にて、多くの方々より貴重なアドバイスをいただきました。<br>
   皆様のお力添え無しには本作品はここまで到達できなかったであろうと思われます。<br>
