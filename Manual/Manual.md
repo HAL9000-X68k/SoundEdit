@@ -1,46 +1,46 @@
-# ���F��Y�@��������@(Version 1.10)
+# 音色野郎　操作説明　(Version 1.10)
 ***
 
-## �ڎ�
-- [���F��Y�@��������@(Version 1.10)](#���F��Y�������version-110)
-  - [�ڎ�](#�ڎ�)
-  - [���O�ɏ������K�v�ȃ\�t�g�E�F�A](#���O�ɏ������K�v�ȃ\�t�g�E�F�A)
-  - [�n����̉��](#�n����̉��)
-  - [�����h���C�o���](#�����h���C�o���)
-  - [�R���g���[���̐���](#�R���g���[���̐���)
-    - [�R�}���h�{�^��](#�R�}���h�{�^��)
-    - [���F�p�����[�^�i�P�j](#���F�p�����[�^�P)
-    - [���F�p�����[�^�i�Q�j](#���F�p�����[�^�Q)
-    - [���F�p�����[�^�i�R�j](#���F�p�����[�^�R)
-    - [�e���|�E�p���|�b�g](#�e���|�p���|�b�g)
-    - [�R�����g](#�R�����g)
-    - [���t�֘A�R���g���[��](#���t�֘A�R���g���[��)
-    - [���b�Z�[�W�n�R���g���[��](#���b�Z�[�W�n�R���g���[��)
+## 目次
+- [音色野郎　操作説明　(Version 1.10)](#音色野郎操作説明version-110)
+  - [目次](#目次)
+  - [事前に準備が必要なソフトウェア](#事前に準備が必要なソフトウェア)
+  - [始動後の画面](#始動後の画面)
+  - [音源ドライバ種別](#音源ドライバ種別)
+  - [コントロールの説明](#コントロールの説明)
+    - [コマンドボタン](#コマンドボタン)
+    - [音色パラメータ（１）](#音色パラメータ１)
+    - [音色パラメータ（２）](#音色パラメータ２)
+    - [音色パラメータ（３）](#音色パラメータ３)
+    - [テンポ・パンポット](#テンポパンポット)
+    - [コメント](#コメント)
+    - [演奏関連コントロール](#演奏関連コントロール)
+    - [メッセージ系コントロール](#メッセージ系コントロール)
 ***
-## ���O�ɏ������K�v�ȃ\�t�g�E�F�A
-�{�\�t�g�E�F�A�̓���ɂ͈ȉ��̃\�t�g�E�F�A���K�v�ƂȂ�܂��̂ŁA���O�̓��肪�K�v�ł��B
+## 事前に準備が必要なソフトウェア
+本ソフトウェアの動作には以下のソフトウェアが必要となりますので、事前の入手が必要です。
 
-1. [**IOCS.X**]�܂���[**HIOCS.X**]
-��L�\�t�g�E�F�A�́A�e�L�X�g��ʂ̋�`�̈�X�N���[�����s���ׂɕK�v�ł��B�Ȃ�**HIOCS.X**��Ver 1.10+16.19�ȍ~���K�v�ŁA����ȑO�̃o�[�W�����ł͐��������삵�܂���B<br/><br/>
-1. �����h���C�o
-�{�\�t�g�E�F�A��FM�����h���C�o�Ƃ���**Z-MUSIC**�܂���**OPMDRV3.X**��O��Ƃ��Ă���A���̃h���C�o�ł͓���v���܂���B**�iZ-MUSIC Ver 3�ɂ͑Ή����Ă��܂���j**
-Ver1.10���**Z-MUSIC Ver 2.08**�𓯍����Ă��܂��̂ŁA������������p�����������Ŗ{�\�t�g�E�F�A���^�p�ł��܂��B
-**OPMDRV3.X**���������̕���**Z-MUSIC**�̑���ɂ�������풓�����鎖�Ŗ{�\�t�g�E�F�A���^�p�ł��܂����A�Đ����t���̃L�[�{�[�h�\���@�\�͂����p���������܂���B
+1. [**IOCS.X**]または[**HIOCS.X**]
+上記ソフトウェアは、テキスト画面の矩形領域スクロールを行う為に必要です。なお**HIOCS.X**はVer 1.10+16.19以降が必要で、それ以前のバージョンでは正しく動作しません。<br/><br/>
+1. 音源ドライバ
+本ソフトウェアはFM音源ドライバとして**Z-MUSIC**または**OPMDRV3.X**を前提としており、他のドライバでは動作致しません。**（Z-MUSIC Ver 3には対応していません）**<br>
+Ver1.10より**Z-MUSIC Ver 2.08**を同梱していますので、こちらをご利用いただく事で本ソフトウェアが運用できます。<br>
+**OPMDRV3.X**をお持ちの方は**Z-MUSIC**の代わりにこちらを常駐させる事で本ソフトウェアを運用できますが、再生演奏時のキーボード表示機能はご利用いただけません。
 
-��L�\�t�g�E�F�A���풓��������Ŗ{�v���O�����uSoundEdt.X�v���N������ƁA�K�v�f�[�^��ǂݍ���ŃV�X�e�����N�����܂��B**�i�Ȃ��A�������f�[�^�̓ǂݍ��݂ɂ��Ȃ莞�Ԃ�������܂��B�j**
+上記ソフトウェアを常駐させた後で本プログラム「SoundEdt.X」を起動すると、必要データを読み込んでシステムが起動します。**（なお、説明文データの読み込みにかなり時間がかかります。）**
 
-## �n����̉��
-�V�X�e�����N������ƁA�ȉ��̉�ʂ��\������܂��B
+## 始動後の画面
+システムが起動すると、以下の画面が表示されます。
 ![Image001](Image/Man001.png)
 
-## �����h���C�o���
-��ʉE��ɁA���ݎg�p���̉����h���C�o��ʂ��\������܂��B
+## 音源ドライバ種別
+画面右上に、現在使用中の音源ドライバ種別が表示されます。
 
 <table border="1">
-<caption>�����h���C�o�̎��</caption>
+<caption>音源ドライバの種類</caption>
 <thead>
 <tr>
-<th>Z-MUSIC�̏ꍇ</th><th>OPMDRV3�̏ꍇ</th>
+<th>Z-MUSICの場合</th><th>OPMDRV3の場合</th>
 </tr>
 </thead>
 <tr>
@@ -49,600 +49,600 @@ Ver1.10���**Z-MUSIC Ver 2.08**�𓯍����Ă��܂��̂ŁA������������p�����������Ŗ
 </tr>
 </table>
 
-## �R���g���[���̐���
-�ȉ��ɁA��ʏ�̊e�R���g���[���̐������L�q���܂��B
+## コントロールの説明
+以下に、画面上の各コントロールの説明を記述します。
 ***
-### �R�}���h�{�^��
-��ʏ㕔�ɕ��ԃ{�^���ɂ��ĉ�����܂��B<br>
+### コマンドボタン
+画面上部に並ぶボタンについて解説します。<br>
 ![Image002](Image/Man002.png)
 
 <table border="1">
-<caption>�{�^���̎��</caption>
+<caption>ボタンの種類</caption>
 <thead>
 <tr>
-<th width="20%">�{�^������</th><th>����</th>
+<th width="20%">ボタン名称</th><th>説明</th>
 </tr>
 </thead>
 <tr>
-<td>[ Load ]�{�^��<br><img src="Image/Man003.png"></td>
+<td>[ Load ]ボタン<br><img src="Image/Man003.png"></td>
 <td>
-���F�Ɖ��t���e���L�^�����f�[�^�t�@�C����ǂݍ��݂܂��B<br>
-���̓t�@�C�����́u<strong>SaveData.dat</strong>�v�Œ�ł��B<br>
-�f�[�^�t�@�C�������݂��Ȃ����ǂݍ��݂Ɏ��s�����ꍇ�ɂ́A�T���v���̉��F�f�[�^���ݒ肳��܂��B
+音色と演奏内容を記録したデータファイルを読み込みます。<br>
+入力ファイル名は「<strong>SaveData.dat</strong>」固定です。<br>
+データファイルが存在しないか読み込みに失敗した場合には、サンプルの音色データが設定されます。
 </td>
 </tr>
 <tr>
-<td>[ Save ]�{�^��<br><img src="Image/Man004.png"></td>
+<td>[ Save ]ボタン<br><img src="Image/Man004.png"></td>
 <td>
-���F�Ɖ��t���e���f�[�^�t�@�C���ɏo�͂��܂��B<br>
-�o�̓t�@�C�����́u<strong>SaveData.dat</strong>�v�Œ�ł��B
+音色と演奏内容をデータファイルに出力します。<br>
+出力ファイル名は「<strong>SaveData.dat</strong>」固定です。
 </td>
 </tr>
 <tr>
-<td>[ MML�o�� ]�{�^��<br><img src="Image/Man005.png"></td>
+<td>[ MML出力 ]ボタン<br><img src="Image/Man005.png"></td>
 <td>
-���F�ƁA�L�^�������t���e��MML�f�[�^�Ƃ��ăe�L�X�g�t�@�C���ɏo�͂��܂��B<br>
-MML������Z-MUSIC Ver2.08��<strong>ZMS�`��</strong>�܂���OPMDRV3��<strong>OPM�`��</strong>�ɏ������Ă���A<strong>Z-MUSIC Ver3.0�Ƃ̌݊����͂���܂���B</strong><br>
-�o�̓t�@�C�����́A<strong>Z-MUSIC</strong>�풓���́u<strong>ZmsData.ZMS</strong>�v�A<strong>OPMDRV3</strong>�풓���́u<strong>OpmData.OPM</strong>�v�Œ�ł��B<br>
-�܂��A���t�f�[�^��MML�ɕϊ�����ۂɉ����́u�ۂ߁v���������܂��̂ŁA���ۂ̉��t�Ƃ͉����̒������قȂ���MML�f�[�^���o�͂���鎖������܂��B<br>
-<strong>���o�͂���MML���ēx�ǂݍ��ދ@�\�͓��ڂ��Ă���܂���B</strong>
+音色と、記録した演奏内容をMMLデータとしてテキストファイルに出力します。<br>
+MML書式はZ-MUSIC Ver2.08の<strong>ZMS形式</strong>またはOPMDRV3の<strong>OPM形式</strong>に準拠しており、<strong>Z-MUSIC Ver3.0との互換性はありません。</strong><br>
+出力ファイル名は、<strong>Z-MUSIC</strong>常駐時は「<strong>ZmsData.ZMS</strong>」、<strong>OPMDRV3</strong>常駐時は「<strong>OpmData.OPM</strong>」固定です。<br>
+また、演奏データをMMLに変換する際に音長の「丸め」が発生しますので、実際の演奏とは音符の長さが異なったMMLデータが出力される事があります。<br>
+<strong>※出力したMMLを再度読み込む機能は搭載しておりません。</strong>
 </td>
 </tr>
 <tr>
-<td>[ ���F���� ]�{�^��<br><img src="Image/Man006.png"></td>
+<td>[ 音色複製 ]ボタン<br><img src="Image/Man006.png"></td>
 <td>
-���ݑI�����Ă��鉹�F�f�[�^�𕡐����܂��B<br>
-�������ꂽ���F�f�[�^�́A���ݓo�^����Ă��鉹�F�f�[�^�Q�̖����ɒǉ�����܂��B
+現在選択している音色データを複製します。<br>
+複製された音色データは、現在登録されている音色データ群の末尾に追加されます。
 </td>
 </tr>
 <tr>
-<td>[ �V�K���F ]�{�^��<br><img src="Image/Man007.png"></td>
+<td>[ 新規音色 ]ボタン<br><img src="Image/Man007.png"></td>
 <td>
-���F�f�[�^��V�K�쐬���܂��B<br>
-�V�K�ǉ����ꂽ���F�f�[�^�ɂ́A���炩���߃T���v���̉��F�p�����[�^���ݒ肳��Ă��܂��B�@�쐬���ꂽ���F�f�[�^�́A���ݓo�^����Ă��鉹�F�f�[�^�Q�̖����ɒǉ�����܂��B</td>
+音色データを新規作成します。<br>
+新規追加された音色データには、あらかじめサンプルの音色パラメータが設定されています。　作成された音色データは、現在登録されている音色データ群の末尾に追加されます。</td>
 </tr>
 <tr>
-<td>[ ���F�폜 ]�{�^��<br><img src="Image/Man008.png"></td>
+<td>[ 音色削除 ]ボタン<br><img src="Image/Man008.png"></td>
 <td>
-���ݑI�����Ă��鉹�F�f�[�^���폜���܂��B<br>
-�폜�����f�[�^�ȍ~�̉��F�ԍ��͍ēx���Ԃ����ׁA���t���L�^������ɉ��F���폜����Ɛ��������t����Ȃ��Ȃ�\��������܂��B
+現在選択している音色データを削除します。<br>
+削除したデータ以降の音色番号は再度発番される為、演奏を記録した後に音色を削除すると正しく演奏されなくなる可能性があります。
 </td>
 </tr>
 <tr>
-<td>[ ���t ]�{�^��<br><img src="Image/Man009.png"></td>
+<td>[ 演奏 ]ボタン<br><img src="Image/Man009.png"></td>
 <td>
-�L�[�{�[�h�ɂ�鉉�t���s���܂��B<br>
-���t�J�n���_�őI�𒆂̉��F���g�p����܂����A�L�[�{�[�h����̑���ŉ��t�Ɏg�p���鉹�F�≹�K�����A���^�C���Ő؂�ւ��鎖���ł��܂��B<br>
-�L�[�{�[�h��̃L�[���蓖�Ă͈ȉ��̒ʂ�ł��B
+キーボードによる演奏を行います。<br>
+演奏開始時点で選択中の音色が使用されますが、キーボードからの操作で演奏に使用する音色や音階をリアルタイムで切り替える事ができます。<br>
+キーボード上のキー割り当ては以下の通りです。
 <table>
     <caltion></caption>
     <thead>
         <tr>
-            <th>�L�[</th><th>�@�\</th>
+            <th>キー</th><th>機能</th>
         </tr>
     </thead>
     <tr>
-    <td>[1]�`[9]</td>
+    <td>[1]～[9]</td>
     <td>
-    �����i�I�N�^�[�u�j�ؑ�<br>
-    �������h���C�o�̎d�l��A�I�N�^�[�u0�`8�ƂȂ��Ă��܂����L�[�{�[�h����Ƃ̑Ή��̌��ˍ�����[1]���I�N�^�[�u0�A[2]���I�N�^�[�u1�A[9]���I�N�^�[�u8�ɑΉ����Ă��܂��B
+    音程（オクターブ）切替<br>
+    ※音源ドライバの仕様上、オクターブ0～8となっていますがキーボード操作との対応の兼ね合いで[1]がオクターブ0、[2]がオクターブ1、[9]がオクターブ8に対応しています。
     </td>
     </tr>
     <tr>
-    <td>[Q]�`[P]</td>
+    <td>[Q]～[P]</td>
     <td>
-    ���F�ؑ�<br>
-    ���F�o���N���̉��F��؂�ւ��܂��B�uQ�v�����F�o���N��1�ԖځA�uW�v��2�ԖڂɑΉ����uP�v���Ō��10�ԖڂɑΉ����܂��B�i���F�o���N�Ɋւ��Ă͌�q�j
+    音色切替<br>
+    音色バンク内の音色を切り替えます。「Q」が音色バンクの1番目、「W」が2番目に対応し「P」が最後の10番目に対応します。（音色バンクに関しては後述）
     </td>
     </tr>
-    <tr><td>[Z]�`[M]</td><td>���t</td></tr>
+    <tr><td>[Z]～[M]</td><td>演奏</td></tr>
 </table>
-���t�ɗp����L�[�̊��蓖�Ă͈ȉ��̒ʂ�ł��B
+演奏に用いるキーの割り当ては以下の通りです。
 <table>
     <caltion></caption>
     <thead>
         <tr>
-            <th>�L�[</th><th>�Ή����鉹</th>
+            <th>キー</th><th>対応する音</th>
         </tr>
     </thead>
-    <tr><td>[Z]</td><td>�u�h�vMML�\�L�́uC�v�ɑΉ����܂��B</td></tr>
-    <tr><td>[S]</td><td>�u�h#�vMML�\�L�́uC#�v�ɑΉ����܂��B</td></tr>
-    <tr><td>[X]</td><td>�u���vMML�\�L�́uD�v�ɑΉ����܂��B</td></tr>
-    <tr><td>[D]</td><td>�u��#�vMML�\�L�́uD#�v�ɑΉ����܂��B</td></tr>
-    <tr><td>[C]</td><td>�u�~�vMML�\�L�́uE�v�ɑΉ����܂��B</td></tr>
-    <tr><td>[V]</td><td>�u�t�@�vMML�\�L�́uF�v�ɑΉ����܂��B</td></tr>
-    <tr><td>[G]</td><td>�u�t�@#�vMML�\�L�́uF#�v�ɑΉ����܂��B</td></tr>
-    <tr><td>[B]</td><td>�u�\�vMML�\�L�́uG�v�ɑΉ����܂��B</td></tr>
-    <tr><td>[H]</td><td>�u�\#�vMML�\�L�́uG#�v�ɑΉ����܂��B</td></tr>
-    <tr><td>[N]</td><td>�u���vMML�\�L�́uA�v�ɑΉ����܂��B</td></tr>
-    <tr><td>[J]</td><td>�u��#�vMML�\�L�́uA#�v�ɑΉ����܂��B</td></tr>
-    <tr><td>[M]</td><td>�u�V�vMML�\�L�́uB�v�ɑΉ����܂��B</td></tr>
-    <tr><td>[ESC]</td><td>���t���[�h���I�����܂��B</td></tr>
+    <tr><td>[Z]</td><td>「ド」MML表記の「C」に対応します。</td></tr>
+    <tr><td>[S]</td><td>「ド#」MML表記の「C#」に対応します。</td></tr>
+    <tr><td>[X]</td><td>「レ」MML表記の「D」に対応します。</td></tr>
+    <tr><td>[D]</td><td>「レ#」MML表記の「D#」に対応します。</td></tr>
+    <tr><td>[C]</td><td>「ミ」MML表記の「E」に対応します。</td></tr>
+    <tr><td>[V]</td><td>「ファ」MML表記の「F」に対応します。</td></tr>
+    <tr><td>[G]</td><td>「ファ#」MML表記の「F#」に対応します。</td></tr>
+    <tr><td>[B]</td><td>「ソ」MML表記の「G」に対応します。</td></tr>
+    <tr><td>[H]</td><td>「ソ#」MML表記の「G#」に対応します。</td></tr>
+    <tr><td>[N]</td><td>「ラ」MML表記の「A」に対応します。</td></tr>
+    <tr><td>[J]</td><td>「ラ#」MML表記の「A#」に対応します。</td></tr>
+    <tr><td>[M]</td><td>「シ」MML表記の「B」に対応します。</td></tr>
+    <tr><td>[ESC]</td><td>演奏モードを終了します。</td></tr>
 </table>
-<strong>�����t�\�Ȕ͈͂ɂ���</strong><br>
-�����h���C�o�̎d�l�ɂ��A���t�\�ȉ��͈̔͂́u�I�N�^�[�u0�̃�#�iD#�j�`�I�N�^�[�u8�̃��iD�j�܂Łv�ƂȂ��Ă��܂��B
+<strong>※演奏可能な範囲について</strong><br>
+音源ドライバの仕様により、演奏可能な音の範囲は「オクターブ0のレ#（D#）～オクターブ8のレ（D）まで」となっています。
 </td>
 </tr>
 <tr>
-<td>[ �Đ� ]�{�^��<br><img src="Image/Man010.png"></td>
+<td>[ 再生 ]ボタン<br><img src="Image/Man010.png"></td>
 <td>
-[�L�^]�{�^���ŋL�^�������t���e���������t�ōĐ����܂��B<br>
-���̍ہA<strong>[�����Ώۃg���b�N]</strong>�őI������Ă���g���b�N�̂ݔ������܂��B
+[記録]ボタンで記録した演奏内容を自動演奏で再生します。<br>
+その際、<strong>[発声対象トラック]</strong>で選択されているトラックのみ発声します。
 </td>
 </tr>
 <tr>
-<td>[ �L�^ ]�{�^��<br><img src="Image/Man011.png"></td>
+<td>[ 記録 ]ボタン<br><img src="Image/Man011.png"></td>
 <td>
-�L�[�{�[�h�ł̉��t���L�^���܂��B<br>
-�L�^��<strong>[TRACK]</strong>�܂���<strong>[���t�Ώۃg���b�N]</strong>�őI�����ꂽ�g���b�N�ɑ΂��čs���܂��B
-X68000��FM�����͍ő�8�̃g���b�N�������Ă���ő�8�d�a���ł̉��t���\�ł����{�\�t�g�E�F�A�ł�1�x��1�g���b�N�������L�^�ł��Ȃ��ׁA�L�^�Ώۂ̃g���b�N��<strong>[TRACK]</strong>�܂���<strong>[���t�Ώۃg���b�N]</strong>�Ŏw�肵�܂��B
-��������1�g���b�N���ʂɋL�^�������t�f�[�^��<strong>[�Đ�]</strong>�{�^���őS�g���b�N�𓯎��Đ��ł��܂����A<strong>[�����Ώۃg���b�N]</strong>�ŔC�ӂ̃g���b�N�̂ݍĐ����鎖���\�ł��B
+キーボードでの演奏を記録します。<br>
+記録は<strong>[TRACK]</strong>または<strong>[演奏対象トラック]</strong>で選択されたトラックに対して行われます。
+X68000のFM音源は最大8つのトラックを持っており最大8重和音での演奏が可能ですが本ソフトウェアでは1度に1トラックずつしか記録できない為、記録対象のトラックを<strong>[TRACK]</strong>または<strong>[演奏対象トラック]</strong>で指定します。
+こうして1トラックずつ個別に記録した演奏データは<strong>[再生]</strong>ボタンで全トラックを同時再生できますが、<strong>[発声対象トラック]</strong>で任意のトラックのみ再生する事も可能です。
 
 </td>
 </tr>
 <tr>
-<td>[ �I�� ]�{�^��<br><img src="Image/Man012.png"></td>
+<td>[ 終了 ]ボタン<br><img src="Image/Man012.png"></td>
 <td>
-�{�\�t�g�E�F�A���I�����܂��B<br>
-�ҏW���̃f�[�^�͎�����̂ŁA���O�ɕۑ����ĉ������B
+本ソフトウェアを終了します。<br>
+編集中のデータは失われるので、事前に保存して下さい。
 </td>
 </tr>
 </table>
 
 ***
-### ���F�p�����[�^�i�P�j
-���F�ԍ��ƁA�I�y���[�^�i<strong>[M1]</strong>�`<strong>[C2]</strong>�j���̃p�����[�^���ɂ��ĉ�����܂��B<br>
+### 音色パラメータ（１）
+音色番号と、オペレータ（<strong>[M1]</strong>～<strong>[C2]</strong>）毎のパラメータ欄について解説します。<br>
 ![Image013](Image/Man013.png)
 
 <table border="1">
     <caption></caption>
     <thead>
         <tr>
-            <th>�R���g���[������</th><th>����</th>
+            <th>コントロール名称</th><th>説明</th>
         </tr>
     </thead>
     <tr>
-        <td width="20%">[ ���F�ԍ� ]��<br><img src="Image/Man014.png"></td>
-        <td>���ݕҏW���̉��F�ԍ���\�����܂��B�@�\���́u���F�ԍ��^���F�����v�`���ƂȂ��Ă���u���F�ԍ��v�����ݑI�����ҏW���̉��F�ԍ��A�u���F�����v�����݃V�X�e���ɓo�^����Ă��鉹�F�̑�����\���A���́^�I���ł���̂́A���̉��F����������ƂȂ�܂��B�@�u���F�ԍ��v���ɒl����͂܂��͉E���̖��i������с��j���N���b�N���l�𑝌������鎖�ŁA�I�����鉹�F��؂�ւ����܂��B</td>
+        <td width="20%">[ 音色番号 ]欄<br><img src="Image/Man014.png"></td>
+        <td>現在編集中の音色番号を表示します。　表示は「音色番号／音色総数」形式となっており「音色番号」が現在選択し編集中の音色番号、「音色総数」が現在システムに登録されている音色の総数を表し、入力／選択できるのは、この音色総数が上限となります。　「音色番号」欄に値を入力または右側の矢印（▲および▼）をクリックし値を増減させる事で、選択する音色を切り替えられます。</td>
     </tr>
     <tr>
-        <td>[ ���F�o���N ]��<br><img src="Image/Man015.png"></td>
+        <td>[ 音色バンク ]欄<br><img src="Image/Man015.png"></td>
         <td>
-            �o�^����Ă��鉹�F���L�[�{�[�h�Ɋ��蓖�Ă���͗��ł��B<br>
-            �o�^����Ă��鉹�F�̂����ő�10�܂ł��L�[�{�[�h�ł̉��F�ؑւɊ��蓖�Ă鎖���ł��A���̓��󂪕\������܂��B�@���x���ԍ��́u1�v�`�u0�v���A���ꂼ��L�[�{�[�h�́uQ�v�`�uP�v�ɑΉ����Ă��艉�t���ɑΉ�����L�[���������鎖�Ń��A���^�C���ɉ��F��؂�ւ��ĉ��t�ł��܂��B<br>
-            �܂��A�C�ӂ̗��ɉ��F�ԍ�����͂��鎖�ŏ�L�̃L�[�ɐ؂�ւ��p�̉��F�ԍ���ݒ�ł��܂��B�����́u1�v�`�u10�v�̓L�[�{�[�h�́uQ�v�`�uP�v�ɑΉ����Ă���A�Ⴆ�Ή��t���ɁuE�v�L�[�����ŉ��F�o���N���́u3�v�ɓ��͂���Ă��鉹�F�ɐ؂�ւ��A�uP�v�L�[���������鎖�ŉ��F�o���N���́u10�v�ɓ��͂���Ă��鉹�F�ɐ؂�ւ��܂��B<br>
+            登録されている音色をキーボードに割り当てる入力欄です。<br>
+            登録されている音色のうち最大10個までをキーボードでの音色切替に割り当てる事ができ、その内訳が表示されます。　ラベル番号の「1」～「0」が、それぞれキーボードの「Q」～「P」に対応しており演奏中に対応するキーを押下する事でリアルタイムに音色を切り替えて演奏できます。<br>
+            また、任意の欄に音色番号を入力する事で上記のキーに切り替え用の音色番号を設定できます。数字の「1」～「10」はキーボードの「Q」～「P」に対応しており、例えば演奏中に「E」キー押下で音色バンク欄の「3」に入力されている音色に切り替わり、「P」キーを押下する事で音色バンク欄の「10」に入力されている音色に切り替わります。<br>
             <dl>
-                <dt>�����͗��ƃL�[�̑Ή�</dt>
-                <dd>[1] �c�L�[�{�[�h��[Q]</dd>
-                <dd>[2] �c�L�[�{�[�h��[W]</dd>
-                <dd>[3] �c�L�[�{�[�h��[E]</dd>
-                <dd>[4] �c�L�[�{�[�h��[R]</dd>
-                <dd>[5] �c�L�[�{�[�h��[T]</dd>
-                <dd>[6] �c�L�[�{�[�h��[Y]</dd>
-                <dd>[7] �c�L�[�{�[�h��[U]</dd>
-                <dd>[8] �c�L�[�{�[�h��[I]</dd>
-                <dd>[9] �c�L�[�{�[�h��[O]</dd>
-                <dd>[10]�c�L�[�{�[�h��[P]</dd>
+                <dt>■入力欄とキーの対応</dt>
+                <dd>[1] …キーボードの[Q]</dd>
+                <dd>[2] …キーボードの[W]</dd>
+                <dd>[3] …キーボードの[E]</dd>
+                <dd>[4] …キーボードの[R]</dd>
+                <dd>[5] …キーボードの[T]</dd>
+                <dd>[6] …キーボードの[Y]</dd>
+                <dd>[7] …キーボードの[U]</dd>
+                <dd>[8] …キーボードの[I]</dd>
+                <dd>[9] …キーボードの[O]</dd>
+                <dd>[10]…キーボードの[P]</dd>
             </dl>
         </td>
     </tr>
     <tr>
-        <td>[ OM ]��<br><img src="Image/Man016.png"></td>
+        <td>[ OM ]欄<br><img src="Image/Man016.png"></td>
         <td>
-        �[�X���b�g�}�X�N�[<br>
-        �I�y���[�^��ON/OFF��ݒ肵�܂��B�@<strong>[M1]</strong>�`<strong>[C2]</strong>�̂S����I�y���[�^�ɑ΂���ON��OFF��ݒ肵�܂��B�@������<strong>[M1]</strong>�`<strong>[C2]</strong>�̃I�y���[�^�����\������Ă���A���ꂼ��ʂ�ON/OFF��ݒ�ł��܂��B�@ON��ԂŁu���v���\������AOFF��Ԃŋ󔒂��\������܂��B�@�I�y���[�^�P�ʂŋ@�\����̂ŁAOFF�ɐݒ肳�ꂽ�I�y���[�^�̐ݒ�l�i<strong>[AR]</strong>�`<strong>[AME]</strong>�j�S�Ă������ƂȂ�܂��B
+        ースロットマスクー<br>
+        オペレータのON/OFFを設定します。　<strong>[M1]</strong>～<strong>[C2]</strong>の４つあるオペレータに対してONとOFFを設定します。　左横に<strong>[M1]</strong>～<strong>[C2]</strong>のオペレータ名が表示されており、それぞれ個別にON/OFFを設定できます。　ON状態で「●」が表示され、OFF状態で空白が表示されます。　オペレータ単位で機能するので、OFFに設定されたオペレータの設定値（<strong>[AR]</strong>～<strong>[AME]</strong>）全てが無効となります。
         </td>
     </tr>
     <tr>
-        <td>[ AR ]��<br><img src="Image/Man017.png"></td>
+        <td>[ AR ]欄<br><img src="Image/Man017.png"></td>
         <td>
-        �[�A�^�b�N���[�g�[<br>
-        �L�[�I���i������������u�Ԃ̂��Ɓj����Ă���A���̏o�͂��ő�ɂȂ�܂ł̑��x���w�肵�܂��B<br>
-        ���͒l�͈̔͂�0�`31�ł��B�@���l���������ƃW���b�Ə��X�ɏo�鉹�ɂȂ�A�t�ɐ��l���傫���Ȃ�قǉ��̗����オ�肪�����Ȃ�s�A�m�̂悤�Ƀn�b�L���������̏o���ɂȂ�܂��B<br>
+        ーアタックレートー<br>
+        キーオン（音が発生する瞬間のこと）されてから、音の出力が最大になるまでの速度を指定します。<br>
+        入力値の範囲は0～31です。　数値が小さいとジワッと徐々に出る音になり、逆に数値が大きくなるほど音の立ち上がりが速くなりピアノのようにハッキリした音の出方になります。<br>
         <img src="Image/Man056.png">
         </td>
     </tr>
     <tr>
-        <td>[ DR ]��<br><img src="Image/Man018.png"></td>
+        <td>[ DR ]欄<br><img src="Image/Man018.png"></td>
         <td>
-        �[First Decay Rate�[<br>
-        <strong>[D1R]</strong>��<strong>[1DR]</strong>�Ƃ��\�L����܂��B<br>
-        �o�̓��x�����ő�ɂȂ��Ă���A<strong>[SL]</strong>�Őݒ肵�����x���ɉ�����܂ł̑��x��ݒ肵�܂��B<br>
-        ���͒l�͈̔͂�0�`31�ł��B�@�l���傫���Ȃ�قǉ��̌������x�������Ȃ�A�����������Ȃ��Ă����̂����܂�܂��B<br>
-        �[<strong>[SR]</strong>�Ƃ̈Ⴂ�[<br>
-        <strong>[DR]</strong>�Őݒ肷��̂́A�ȉ��Ɏ����悤�ɍő�o�͂���<strong>[SL]</strong>�܂ł͈̔͂̌����x���ł��B�@<strong>[SL]</strong>�ȍ~�̌����x����<strong>[SR]</strong>�ɂĐݒ肵�܂��B<br>
+        ーFirst Decay Rateー<br>
+        <strong>[D1R]</strong>や<strong>[1DR]</strong>とも表記されます。<br>
+        出力レベルが最大になってから、<strong>[SL]</strong>で設定したレベルに下がるまでの速度を設定します。<br>
+        入力値の範囲は0～31です。　値が大きくなるほど音の減衰速度が速くなり、音が小さくなっていくのが速まります。<br>
+        ー<strong>[SR]</strong>との違いー<br>
+        <strong>[DR]</strong>で設定するのは、以下に示すように最大出力から<strong>[SL]</strong>までの範囲の減衰度合です。　<strong>[SL]</strong>以降の減衰度合は<strong>[SR]</strong>にて設定します。<br>
         <img src="Image/Man056.png">
         </td>
     </tr>
     <tr>
-        <td>[ SR ]��<br><img src="Image/Man019.png"></td>
+        <td>[ SR ]欄<br><img src="Image/Man019.png"></td>
         <td>
-        �|Second Dacey Rate�|<br>
-        <strong>[D2R]</strong>��<strong>[2DR]</strong>�Ƃ��\�L����܂��B<br>
-        <strong>[SL]</strong>�Ŏw�肵���o�̓��x���ɂȂ��Ă���A�L�[�I�t�i���Ղ�����j�����܂ł̑��x��ݒ肵�܂��B�@���͒l�͈̔͂�0�`31�ł��B<br>
-        �l���傫���Ȃ�قǉ��̌������x�������Ȃ�A�����������Ȃ��Ă����̂����܂�܂��B<br>
-        �|<strong>[DR]</strong>�Ƃ̈Ⴂ�|<br>
-        <strong>[SR]</strong>�Őݒ肷��̂́A�ȉ��Ɏ����悤��<strong>[SL]</strong>����L�[�I�t(�L�[���������)�܂ł͈̔͂̌����x���ł��B�@<strong>[SL]</strong>�ȑO�̌����x����<strong>[DR]</strong>�ɂĐݒ肵�܂��B<br>
+        －Second Dacey Rate－<br>
+        <strong>[D2R]</strong>や<strong>[2DR]</strong>とも表記されます。<br>
+        <strong>[SL]</strong>で指定した出力レベルになってから、キーオフ（鍵盤を放す）されるまでの速度を設定します。　入力値の範囲は0～31です。<br>
+        値が大きくなるほど音の減衰速度が速くなり、音が小さくなっていくのが速まります。<br>
+        －<strong>[DR]</strong>との違い－<br>
+        <strong>[SR]</strong>で設定するのは、以下に示すように<strong>[SL]</strong>からキーオフ(キーが放される)までの範囲の減衰度合です。　<strong>[SL]</strong>以前の減衰度合は<strong>[DR]</strong>にて設定します。<br>
         <img src="Image/Man056.png">
         </td>
     </tr>
     <tr>
-        <td>[ RR ]��<br><img src="Image/Man020.png"></td>
+        <td>[ RR ]欄<br><img src="Image/Man020.png"></td>
         <td>
-        �|Release Rate�|<br>
-        �L�[�I�t�i���Ղ�����j����Ă��特��������܂ł̑��x��ݒ肵�܂��B�@���l���傫���Ȃ�قǁA�L�[�I�t���Ă���̉��̌����������Ȃ�܂��B�@���͒l�͈̔͂�0�`15�ł��B<br>
-        �l��傫������ƌ��Ղ������Ă���Ԃ̂ݖ�悤�ȁA����������Ƀs�^���Ǝ~�܂�悤�ȉ��̏o���ɂȂ�A�t�ɒl������������ƌ��Ղ����������]�C���c���悤�ȉ��̏o���ɂȂ�܂��B<br>
+        －Release Rate－<br>
+        キーオフ（鍵盤を放す）されてから音が消えるまでの速度を設定します。　数値が大きくなるほど、キーオフしてからの音の減衰が速くなります。　入力値の範囲は0～15です。<br>
+        値を大きくすると鍵盤を押している間のみ鳴るような、後を引かずにピタリと止まるような音の出方になり、逆に値を小さくすると鍵盤を放した後も余韻を残すような音の出方になります。<br>
         <img src="Image/Man056.png">
         </td>
     </tr>
     <tr>
-        <td>[ SL ]��<br><img src="Image/Man021.png"></td>
+        <td>[ SL ]欄<br><img src="Image/Man021.png"></td>
         <td>
-        �|First Decay Level�|<br>
-        <strong>[D1L]</strong>��<strong>[1DL]</strong>�Ƃ��\�L����܂��B<br>
-        <strong>[DR]</strong>����<strong>[SR]</strong>�Ɉڂ�臒l�ƂȂ�o�̓��x����ݒ肵�܂��B�@���͒l�͈̔͂�0�`15�ł��B<br>
-        ���l���傫���Ȃ�ق�臒l�ƂȂ�o�̓��x�����Ⴍ�Ȃ�܂��B
+        －First Decay Level－<br>
+        <strong>[D1L]</strong>や<strong>[1DL]</strong>とも表記されます。<br>
+        <strong>[DR]</strong>から<strong>[SR]</strong>に移る閾値となる出力レベルを設定します。　入力値の範囲は0～15です。<br>
+        数値が大きくなるほど閾値となる出力レベルが低くなります。
         <dl>
-        <dt>�l�̓���</dt>
-        <dd>0�c������ 0db�@ 8�c������24db</dd>
-        <dd>1�c������ 3db�@ 9�c������27db</dd>
-        <dd>2�c������ 6db�@10�c������30db</dd>
-        <dd>3�c������ 9db�@11�c������33db</dd>
-        <dd>4�c������12db�@12�c������36db</dd>
-        <dd>5�c������15db�@13�c������39db</dd>
-        <dd>6�c������18db�@14�c������42db</dd>
-        <dd>7�c������21db�@15�c������93db</dd>
+        <dt>値の内訳</dt>
+        <dd>0…減衰量 0db　 8…減衰量24db</dd>
+        <dd>1…減衰量 3db　 9…減衰量27db</dd>
+        <dd>2…減衰量 6db　10…減衰量30db</dd>
+        <dd>3…減衰量 9db　11…減衰量33db</dd>
+        <dd>4…減衰量12db　12…減衰量36db</dd>
+        <dd>5…減衰量15db　13…減衰量39db</dd>
+        <dd>6…減衰量18db　14…減衰量42db</dd>
+        <dd>7…減衰量21db　15…減衰量93db</dd>
         </dl>
         <img src="Image/Man056.png">
         </td>
     </tr>
     <tr>
-        <td>[ OL ]��<br><img src="Image/Man022.png"></td>
+        <td>[ OL ]欄<br><img src="Image/Man022.png"></td>
         <td>
-        �|Output Level(Total Level)�|<br>
-        <strong>[TL]</strong>�Ƃ��\�L����܂��B<br>
-        ���F����щ��ʂ𐧌䂷��ׂ́A�e�I�y���[�^�ɂ�����<strong>EG</strong>�̃g�[�^���o�̓��x����ݒ肵�܂��B�@���͒l�͈̔͂�0�`127�ł��B<br>
+        －Output Level(Total Level)－<br>
+        <strong>[TL]</strong>とも表記されます。<br>
+        音色および音量を制御する為の、各オペレータにおける<strong>EG</strong>のトータル出力レベルを設定します。　入力値の範囲は0～127です。<br>
         <table border="1">
             <thead><tr><th>EG=Envelope Generator</th></tr></thead>
             <tr>
             <td>
-            FM�����̏o�͂Ɏ��ԓI�ȕω���^����d�g�݂ł��B<br>
-            <strong>[AR][DR][SR][RR]</strong>�̂S�̐ݒ�l�ɂ���Č��肳��܂��B
-            �L�����A�iC1�AC2�j�̏o�̓��x���͉��ʂ�ω��������W�����[�^<strong>�iM1�AM2�j</strong>�̏o�̓��x���͉��F��ω������܂��B�@���l���傫���Ȃ�قǏo�̓��x���͏������Ȃ�܂��B
+            FM音源の出力に時間的な変化を与える仕組みです。<br>
+            <strong>[AR][DR][SR][RR]</strong>の４つの設定値によって決定されます。
+            キャリア（C1、C2）の出力レベルは音量を変化させモジュレータ<strong>（M1、M2）</strong>の出力レベルは音色を変化させます。　数値が大きくなるほど出力レベルは小さくなります。
             </td>
             </tr>
         </table>
         </td>
     </tr>
     <tr>
-        <td>[ KS ]��<br><img src="Image/Man023.png"></td>
+        <td>[ KS ]欄<br><img src="Image/Man023.png"></td>
         <td>
-        �|Key Scaling�|<br>
-        ���̍����i�L�[�R�[�h�j�ɂ���āA�G���x���[�v(�o�͔g�`)�̒�����ω������܂��B�@���͒l�͈̔͂�0�`3�ł��B<br>
-        ���l���傫���Ȃ�قǁA������ł̃G���x���[�v�̒������Z���Ȃ�A���F���s���Ȃ�܂��B
+        －Key Scaling－<br>
+        音の高さ（キーコード）によって、エンベロープ(出力波形)の長さを変化させます。　入力値の範囲は0～3です。<br>
+        数値が大きくなるほど、高音域でのエンベロープの長さが短くなり、音色が鋭くなります。
         </td>
     </tr>
     <tr>
-        <td>[ ML ]��<br><img src="Image/Man024.png"></td>
+        <td>[ ML ]欄<br><img src="Image/Man024.png"></td>
         <td>
-        �|Phase Multiply�|<br>
-        <strong>[M1]</strong>�`<strong>[C2]</strong>�̊e�I�y���[�^���g����ݒ肵�܂��B�@���͒l�͈̔͂�0�`15�ł��B<br>
-        �ݒ�l�́A���ՕW���s�b�`�ɑ΂�����g���̔��\���܂��B(0�̏ꍇ��1/2�̎��g��)
+        －Phase Multiply－<br>
+        <strong>[M1]</strong>～<strong>[C2]</strong>の各オペレータ周波数を設定します。　入力値の範囲は0～15です。<br>
+        設定値は、鍵盤標準ピッチに対する周波数の比を表します。(0の場合は1/2の周波数)
         </td>
     </tr>
     <tr>
-        <td>[ DT1 ]��<br><img src="Image/Man025.png"></td>
+        <td>[ DT1 ]欄<br><img src="Image/Man025.png"></td>
         <td>
-        �|Detune 1�|<br>
-        <strong>[M1]</strong>�`<strong>[C2]</strong>�e�I�y���[�^�̃s�b�`������ɂ��炷���ɂ��A���̔g�̊ɏՍ�p���N�����ĉ��ɍL�����^���܂��B�@���͒l�͈̔͂�0�`7�ł��B
+        －Detune 1－<br>
+        <strong>[M1]</strong>～<strong>[C2]</strong>各オペレータのピッチを微妙にずらす事により、音の波の緩衝作用を起こして音に広がりを与えます。　入力値の範囲は0～7です。
         <dl>
-        <dt>�l�̓���</dt>
-        <dd>0�c�s�b�`�ω���0</dd>
-        <dd>1�c�s�b�`�ω���+1</dd>
-        <dd>2�c�s�b�`�ω���+2</dd>
-        <dd>3�c�s�b�`�ω���+3</dd>
-        <dd>4�c�s�b�`�ω���0</dd>
-        <dd>5�c�s�b�`�ω���-1</dd>
-        <dd>6�c�s�b�`�ω���-2</dd>
-        <dd>7�c�s�b�`�ω���-3</dd>
+        <dt>値の内訳</dt>
+        <dd>0…ピッチ変化＝0</dd>
+        <dd>1…ピッチ変化＝+1</dd>
+        <dd>2…ピッチ変化＝+2</dd>
+        <dd>3…ピッチ変化＝+3</dd>
+        <dd>4…ピッチ変化＝0</dd>
+        <dd>5…ピッチ変化＝-1</dd>
+        <dd>6…ピッチ変化＝-2</dd>
+        <dd>7…ピッチ変化＝-3</dd>
         </td>
     </tr>
     <tr>
-        <td>[ DT2 ]��<br><img src="Image/Man026.png"></td>
+        <td>[ DT2 ]欄<br><img src="Image/Man026.png"></td>
         <td>
-        �|Detune 2�|<br>
-        <strong>[M1]</strong>�`<strong>[C2]</strong>�e�I�y���[�^�̎��g�����񐮐��{�ɂ������ꍇ�ɐݒ肵�܂��B�@���͒l�͈̔͂�0�`3�ł��B<br>
-        �l��ݒ肷�鎖�ŁA<strong>[MUL]</strong>�Ŏw�肳�ꂽ���g�����ȉ��̂悤�ɕύX���܂��B
+        －Detune 2－<br>
+        <strong>[M1]</strong>～<strong>[C2]</strong>各オペレータの周波数比を非整数倍にしたい場合に設定します。　入力値の範囲は0～3です。<br>
+        値を設定する事で、<strong>[MUL]</strong>で指定された周波数を以下のように変更します。
         <dl>
-        <dt>�l�̓���</dt>
-        <dd>0�c<strong>[ML]</strong>�Ŏw�肵�����g����1.00�{</dd>
-        <dd>1�c<strong>[ML]</strong>�Ŏw�肵�����g����1.41�{</dd>
-        <dd>2�c<strong>[ML]</strong>�Ŏw�肵�����g����1.57�{</dd>
-        <dd>3�c<strong>[ML]</strong>�Ŏw�肵�����g����1.73�{</dd>
+        <dt>値の内訳</dt>
+        <dd>0…<strong>[ML]</strong>で指定した周波数の1.00倍</dd>
+        <dd>1…<strong>[ML]</strong>で指定した周波数の1.41倍</dd>
+        <dd>2…<strong>[ML]</strong>で指定した周波数の1.57倍</dd>
+        <dd>3…<strong>[ML]</strong>で指定した周波数の1.73倍</dd>
         </dl>
         </td>
     </tr>
     <tr>
-        <td>[ AME ]��<br><img src="Image/Man027.png"></td>
+        <td>[ AME ]欄<br><img src="Image/Man027.png"></td>
         <td>
-        �|AMS Enable�|<br>
-        <strong>[M1]</strong>�`<strong>[C2]</strong>�e�I�y���[�^��AMS��ON/OFF���܂��B
-        ON�ɂ��鎖��<strong>[AMS]</strong>�ɐݒ肵��LFO�̊��x���L���ɂȂ�܂��B
-        ��ON�̏ꍇ�u���v���\������AOFF�̏ꍇ�͋󔒂��\������܂��B
+        －AMS Enable－<br>
+        <strong>[M1]</strong>～<strong>[C2]</strong>各オペレータのAMSをON/OFFします。
+        ONにする事で<strong>[AMS]</strong>に設定したLFOの感度が有効になります。
+        ※ONの場合「●」が表示され、OFFの場合は空白が表示されます。
         </td>
     </tr>
 </table>
 
 ***
-### ���F�p�����[�^�i�Q�j
-�A���S���Y���ƃt�B�[�h�o�b�N�̃p�����[�^���ɂ��ĉ�����܂��B<br>
+### 音色パラメータ（２）
+アルゴリズムとフィードバックのパラメータ欄について解説します。<br>
 ![Image028](Image/Man028.png)
 <table border="1">
     <caption></caption>
     <thead>
         <tr>
-            <th>�R���g���[������</th><th>����</th>
+            <th>コントロール名称</th><th>説明</th>
         </tr>
     </thead>
     <tr>
-        <td width="20%">[ AL ]��<br><img src="Image/Man029.png"></td>
+        <td width="20%">[ AL ]欄<br><img src="Image/Man029.png"></td>
         <td>
-        �|Algorithm�|<br>
-        �e�`�����l�����̂S�̃I�y���[�^(<strong>[M1]</strong>�`<strong>[C2]</strong>)�̑g�ݍ��킹��ݒ肵�܂��B���͒l�͈̔͂�0�`7��8��ނŁA�ݒ�l�ɑΉ������g�ݍ��킹��<strong>[�ٺ�ؽ��]</strong>���ɕ\������܂��B
-        <strong>[M1][M2]</strong>�����W�����[�^�A<strong>[C1][C2]</strong>���L�����A�ƌĂт܂��B
-        �T�C���g�Ȃǉ��̌��ƂȂ�g�`�𐶐�����̂��L�����A�ŁA<strong>[C1][C2]</strong>���Y�����܂��B
-        ����ɑ΂��ĕϒ��������ăL�����A�̐����������ɕω���t������������̂����W�����[�^�ŁA<strong>[M1][M2]</strong>���Y�����܂��B
+        －Algorithm－<br>
+        各チャンネル毎の４つのオペレータ(<strong>[M1]</strong>～<strong>[C2]</strong>)の組み合わせを設定します。入力値の範囲は0～7の8種類で、設定値に対応した組み合わせが<strong>[ｱﾙｺﾞﾘｽﾞﾑ]</strong>欄に表示されます。
+        <strong>[M1][M2]</strong>をモジュレータ、<strong>[C1][C2]</strong>をキャリアと呼びます。
+        サイン波など音の源となる波形を生成するのがキャリアで、<strong>[C1][C2]</strong>が該当します。
+        それに対して変調をかけてキャリアの生成した音に変化を付ける役割を持つのがモジュレータで、<strong>[M1][M2]</strong>が該当します。
         </td>
     </tr>
     <tr>
-        <td>[ FB ]��<br><img src="Image/Man030.png"></td>
+        <td>[ FB ]欄<br><img src="Image/Man030.png"></td>
         <td>
-        �|Feed Back�|<br>
-        �e�`�����l�����̍ŏ��̃I�y���[�^�̏o�͂��A���̃I�y���[�^���g�ɖ߂����ɂ��P�̃I�y���[�^�����ŕϒ����s���܂��B�@���͒l�͈̔͂�0�`7��8�i�K�ł��B<br>
-        ���l���傫���Ȃ�قǑ傫���ϒ�����č����g�����������A���F���傫���ς��܂��B
+        －Feed Back－<br>
+        各チャンネル毎の最初のオペレータの出力を、そのオペレータ自身に戻す事により１つのオペレータだけで変調が行えます。　入力値の範囲は0～7の8段階です。<br>
+        数値が大きくなるほど大きく変調されて高周波成分が増え、音色が大きく変わります。
         <dl>
-        <dt>�l�̓���</dt>
-        <dd>0�cOFF</dd>
-        <dd>1�c��/16</dd>
-        <dd>2�c��/8</dd>
-        <dd>3�c��/4</dd>
-        <dd>4�c��/2</dd>
-        <dd>5�c��</dd>
-        <dd>6�c2��</dd>
-        <dd>7�c4��</dd>
+        <dt>値の内訳</dt>
+        <dd>0…OFF</dd>
+        <dd>1…π/16</dd>
+        <dd>2…π/8</dd>
+        <dd>3…π/4</dd>
+        <dd>4…π/2</dd>
+        <dd>5…π</dd>
+        <dd>6…2π</dd>
+        <dd>7…4π</dd>
         </td>
     </tr>
 </table>
 
 ***
-### ���F�p�����[�^�i�R�j
-LFO�i����g���U��j�֘A�̃p�����[�^���ɂ��ĉ�����܂��B<br>
+### 音色パラメータ（３）
+LFO（低周波発振器）関連のパラメータ欄について解説します。<br>
 
-![Image031](Image/Man031.png)�@�@�@![Image032](Image/Man032.png)
+![Image031](Image/Man031.png)　　　![Image032](Image/Man032.png)
 <table border="1">
     <caption></caption>
     <thead>
         <tr>
-            <th>�R���g���[������</th><th>����</th>
+            <th>コントロール名称</th><th>説明</th>
         </tr>
     </thead>
     <tr>
-        <td width="20%">[ WF ]��<br><img src="Image/Man033.png"></td>
+        <td width="20%">[ WF ]欄<br><img src="Image/Man033.png"></td>
         <td>
-�|Wave Form�|<br>
-LFO(����g���U��)���甭�������g�`��I�����܂��B
-�g�`�̈Ⴂ�ɂ��A���ʂ≹�F�̕ω��̎d�����ς��܂��B
-���͒l�͈̔͂�0�`3��4��ނŁA�I�������g�`��<strong>[�E�F�[�u�t�H�[��]</strong>����<strong>[����][����]</strong>�O���t�ɕ\������܂��B
+－Wave Form－<br>
+LFO(低周波発振器)から発生される波形を選択します。
+波形の違いにより、音量や音色の変化の仕方が変わります。
+入力値の範囲は0～3の4種類で、選択した波形は<strong>[ウェーブフォーム]</strong>欄の<strong>[音程][音量]</strong>グラフに表示されます。
         </td>
     </tr>
     <tr>
-        <td>[ SYC ]��<br><img src="Image/Man034.png"></td>
+        <td>[ SYC ]欄<br><img src="Image/Man034.png"></td>
         <td>
-        �|Synchro�|<br>
-        LFO�̃X�^�[�g�ƃL�[�I��(�������������u��)�𓯊�(�V���N��)��ON/OFF���܂��B
-        ON�ɂ��鎖�ŉ����������邽�тɃr�u���[�g��g���������̌��ʂ��g�`�̐擪���炩����܂��B
-        ��ON�̏ꍇ�u���v���\������AOFF�̏ꍇ�͋󔒂��\������܂��B
+        －Synchro－<br>
+        LFOのスタートとキーオン(音が発生される瞬間)を同期(シンクロ)をON/OFFします。
+        ONにする事で音が発生するたびにビブラートやトレモロ等の効果が波形の先頭からかかります。
+        ※ONの場合「●」が表示され、OFFの場合は空白が表示されます。
         <table border="1">
             <caption></caption>
             <thead>
                 <tr>
-                    <th>�r�u���[�g�ƃg������</th>
+                    <th>ビブラートとトレモロ</th>
                 </tr>
             </thead>
             <tr>
                 <td>
-                �r�u���[�g�ƃg�������͎��Ă��܂����A�r�u���[�g�͉����̗h��A�g�������͉��ʂ̗h��Ƃ����Ⴂ������܂��B�@�@�@�@�@�@�@�@�@��
+                ビブラートとトレモロは似ていますが、ビブラートは音程の揺れ、トレモロは音量の揺れという違いがあります。　　　　　　　　　│
                 </td>
             </tr>
         </table>
         </td>
     </tr>
     <tr>
-        <td>[ SPD ]��<br><img src="Image/Man035.png"></td>
+        <td>[ SPD ]欄<br><img src="Image/Man035.png"></td>
         <td>
-        �|Speed�|<br>
-        LFO�̔��U���g��(�r�u���[�g��g���������ʂ̑���)��ݒ肵�܂��B�@���͒l�͈̔͂�0�`255�ł��B<br>
-        0�`255�̒l�͖�0.009�`59Hz�ɑΉ������l���傫���Ȃ�قǎ��g���������Ȃ�X�s�[�h���オ��܂��B
+        －Speed－<br>
+        LFOの発振周波数(ビブラートやトレモロ効果の速さ)を設定します。　入力値の範囲は0～255です。<br>
+        0～255の値は約0.009～59Hzに対応し数値が大きくなるほど周波数が高くなりスピードが上がります。
         </td>
     </tr>
     <tr>
-        <td>[ PMD ]��<br><img src="Image/Man036.png"></td>
+        <td>[ PMD ]欄<br><img src="Image/Man036.png"></td>
         <td>
-        �|Pitch Modulation Depth�|<br>
-        �����ւ̎��g���ϒ��ɑ΂��Ă�����LFO�̏o�̓��x����ݒ肵�܂��B<br>
-        0(�o�̓��x����)��127(�o�̓��x����)<br>
-        ���͒l�͈̔͂�0�`127�ŁA���l���傫���Ȃ�قǐ[��������܂��B
+        －Pitch Modulation Depth－<br>
+        音程への周波数変調に対してかけるLFOの出力レベルを設定します。<br>
+        0(出力レベル小)→127(出力レベル大)<br>
+        入力値の範囲は0～127で、数値が大きくなるほど深くかかります。
         </td>
     </tr>
     <tr>
-        <td>[ AMD ]��<br><img src="Image/Man037.png"></td>
+        <td>[ AMD ]欄<br><img src="Image/Man037.png"></td>
         <td>
-        �|Amplitude Modulation Depth�|<br>
-        ���ʂ̐U���ϒ��ɑ΂��Ă�������LFO�̏o�̓��x����ݒ肵�܂��B<br>
-        0(�o�̓��x����)��127(�o�̓��x����)<br>
-        ���͒l�͈̔͂�0�`127�ŁA���l���傫���Ȃ�قǐ[��������܂��B
+        －Amplitude Modulation Depth－<br>
+        音量の振幅変調に対してかけられるLFOの出力レベルを設定します。<br>
+        0(出力レベル小)→127(出力レベル大)<br>
+        入力値の範囲は0～127で、数値が大きくなるほど深くかかります。
         </td>
     </tr>
     <tr>
-        <td>[ PMS ]��<br><img src="Image/Man038.png"></td>
+        <td>[ PMS ]欄<br><img src="Image/Man038.png"></td>
         <td>
-        �|Pitch Modulation Sensitivity�|<br>
-        �e�`�����l�����̉����ւ̎��g���ϒ��ɑ΂��Ă����� LFO �̊��x��ݒ肵�܂��B<br>
-        0(���x��)��7(���x��)<br>
-        ���l���傫���Ȃ�قǁA���x�͑傫���Ȃ�܂��B
+        －Pitch Modulation Sensitivity－<br>
+        各チャンネル毎の音程への周波数変調に対してかける LFO の感度を設定します。<br>
+        0(感度小)→7(感度大)<br>
+        数値が大きくなるほど、感度は大きくなります。
         </td>
     </tr>
     <tr>
-        <td>[ AMS ]��<br><img src="Image/Man039.png"></td>
+        <td>[ AMS ]欄<br><img src="Image/Man039.png"></td>
         <td>
-        �|Amplitude Modulation Sensitivity�|<br>
-        �e�`�����l�����̉��ʂ̐U���ϒ��ɑ΂��Ă�����LFO�̊��x��ݒ肵�܂��B�@���͒l�͈̔͂�0�`3�ŁA���l���傫���Ȃ�قǊ��x�͑傫���Ȃ�܂��B<br>
-        0(���x��)��3(���x��)
+        －Amplitude Modulation Sensitivity－<br>
+        各チャンネル毎の音量の振幅変調に対してかけるLFOの感度を設定します。　入力値の範囲は0～3で、数値が大きくなるほど感度は大きくなります。<br>
+        0(感度小)→3(感度大)
         </td>
     </tr>
 </table>
 
 ***
-### �e���|�E�p���|�b�g
-�e���|�ύX�E�p���|�b�g�i���̍��E�o�́j�֘A�̃p�����[�^���ɂ��ĉ�����܂��B<br>
+### テンポ・パンポット
+テンポ変更・パンポット（音の左右出力）関連のパラメータ欄について解説します。<br>
 ![Image040](Image/Man040.png)
 <table border="1">
     <caption></caption>
     <thead>
         <tr>
-            <th>�R���g���[������</th><th>����</th>
+            <th>コントロール名称</th><th>説明</th>
         </tr>
     </thead>
     <tr>
-        <td>[ Tempo ]��<br><img src="Image/Man041.png"></td>
+        <td>[ Tempo ]欄<br><img src="Image/Man041.png"></td>
         <td>
-        �Ȃ̃e���|��ݒ肵�܂��B�@���͒l�͈̔͂�30�`200�ł��B<br>
-        �e���|�͂P���Ԃɖ�S�������̐��ŕ\����A�����l��120�ł��B<br>
-        ���l���傫���Ȃ�قǋȒ��������Ȃ�A�t�ɏ��������鎖�ł������Ƃ����ȂɂȂ��čs���܂��B
+        曲のテンポを設定します。　入力値の範囲は30～200です。<br>
+        テンポは１分間に鳴る４分音符の数で表され、初期値は120です。<br>
+        数値が大きくなるほど曲調が速くなり、逆に小さくする事でゆっくりとした曲になって行きます。
         </td>
     </tr>
     <tr>
-        <td>[ Pan ]��<br><img src="Image/Man042.png"></td>
+        <td>[ Pan ]欄<br><img src="Image/Man042.png"></td>
         <td>
-        �|Pan pot�|<br>
-        ���̏o�͕�����ݒ肵�܂��B<br>
-        �l�͈̔͂�0�`3�ł����A��ʏ�ł͐��l�̒��ړ��͍͂s�킸�ȉ��̑I��������I�Ԃ悤�ɂȂ��Ă��܂��B<br>
+        －Pan pot－<br>
+        音の出力方式を設定します。<br>
+        値の範囲は0～3ですが、画面上では数値の直接入力は行わず以下の選択肢から選ぶようになっています。<br>
         <table border="1">
             <caption></caption>
             <thead>
                 <tr>
-                    <th>���ۂ̒l</th><th>��ʏ�̑I����</th>
+                    <th>実際の値</th><th>画面上の選択肢</th>
                 </tr>
             </thead>
-            <tr><td>0</td><td>��~</td></tr>
-            <tr><td>1</td><td>���o��</td></tr>
-            <tr><td>2</td><td>�E�o��</td></tr>
-            <tr><td>3</td><td>�X�e���I</td></tr>
+            <tr><td>0</td><td>停止</td></tr>
+            <tr><td>1</td><td>左出力</td></tr>
+            <tr><td>2</td><td>右出力</td></tr>
+            <tr><td>3</td><td>ステレオ</td></tr>
         </table>
         </td>
     </tr>
 </table>
 
 ***
-### �R�����g
-�R�����g���ɂ��ĉ�����܂��B<br>
+### コメント
+コメント欄について解説します。<br>
 ![Image043](Image/Man043.png)
 <table border="1">
     <caption></caption>
     <thead>
         <tr>
-            <th>�R���g���[������</th><th>����</th>
+            <th>コントロール名称</th><th>説明</th>
         </tr>
     </thead>
     <tr>
-        <td>[ �R�����g ]��<br><img src="Image/Man044.png"></td>
+        <td>[ コメント ]欄<br><img src="Image/Man044.png"></td>
         <td>
-        �ҏW���̉��F�f�[�^�Ɋւ���R�����g��\���^�ҏW���܂��B�@�V�K�쐬���ɂ͏����l�Ƃ��āu�T���v�����F(Base)�v���ݒ肳��Ă��܂��B<br>
-        �ݒ�ł���R�����g������͍ő�96�����őS�p���p�����̍��݂��\�ł��B<br>
-        �ݒ肵���R�����g�͉��F�f�[�^�����MML�f�[�^�ɂ��ۑ��E���f����܂��B
+        編集中の音色データに関するコメントを表示／編集します。　新規作成時には初期値として「サンプル音色(Base)」が設定されています。<br>
+        設定できるコメント文字列は最大96文字で全角半角文字の混在が可能です。<br>
+        設定したコメントは音色データおよびMMLデータにも保存・反映されます。
         </td>
     </tr>
 </table>
 
 ***
-### ���t�֘A�R���g���[��
-���t����ыL�^�A�Đ��Ɋւ���R���g���[���ɂ��ĉ�����܂��B<br>
+### 演奏関連コントロール
+演奏および記録、再生に関するコントロールについて解説します。<br>
 ![Imag045](Image/Man045.png)
 <table border="1">
     <caption></caption>
     <thead>
         <tr>
-            <th>�R���g���[������</th><th>����</th>
+            <th>コントロール名称</th><th>説明</th>
         </tr>
     </thead>
     <tr>
-        <td>[ TRACK ]��<br><img src="Image/Man046.png"></td>
+        <td>[ TRACK ]欄<br><img src="Image/Man046.png"></td>
         <td>
-        �g���b�N�ԍ�����͂��鎖�ŁA���t�Ώ�<strong>n</strong>�̃g���b�N��؂�ւ��܂��B<br>
-        �g���b�N�ԍ���1�`8�܂őI���ł��A�I�𒆂̃g���b�N���L�^�̑ΏۂƂ�
-        ��܂��B<br>
-        ���̐��l��<strong>[���t�Ώۃg���b�N]</strong>���ƘA�����܂��B
+        トラック番号を入力する事で、演奏対象<strong>n</strong>のトラックを切り替えます。<br>
+        トラック番号は1～8まで選択でき、選択中のトラックが記録の対象とな
+        ります。<br>
+        この数値は<strong>[演奏対象トラック]</strong>欄と連動します。
         </td>
     </tr>
     <tr>
-        <td>[ �����Ώۃg���b�N ]��<br><img src="Image/Man047.png"></td>
+        <td>[ 発声対象トラック ]欄<br><img src="Image/Man047.png"></td>
         <td>
-        �Đ�����A�L�^���ɔ���������g���b�N���w�肵�܂��B�@OFF�ɐݒ肵���g���b�N�́A�Đ�������ыL�^���ɔ������܂���B
+        再生時や、記録時に発声させるトラックを指定します。　OFFに設定したトラックは、再生時および記録時に発声しません。
         </td>
     </tr>
     <tr>
-        <td>[ ���t�Ώۃg���b�N ]��<br><img src="Image/Man048.png"></td>
+        <td>[ 演奏対象トラック ]欄<br><img src="Image/Man048.png"></td>
         <td>
-        ���t�A�L�^�̑ΏۂƂ���g���b�N���w�肵�܂��B�@�L�^���́A�I�������g���b�N�ɉ��t
-        ���e���L�^����܂��B
+        演奏、記録の対象とするトラックを指定します。　記録時は、選択したトラックに演奏
+        内容が記録されます。
         </td>
     </tr>
     <tr>
-        <td>[ �I������ ]�{�^��<br><img src="Image/Man049.png"></td>
+        <td>[ 選択消去 ]ボタン<br><img src="Image/Man049.png"></td>
         <td>
-        <strong>[���t�Ώۃg���b�N]</strong>�őI������Ă���g���b�N�̉��t���e���폜���܂��B<br>
-        �S�Ẵg���b�N���e���폜����ɂ́A<strong>[�S����]</strong>�{�^�����g�p���܂��B
+        <strong>[演奏対象トラック]</strong>で選択されているトラックの演奏内容を削除します。<br>
+        全てのトラック内容を削除するには、<strong>[全消去]</strong>ボタンを使用します。
         </td>
     </tr>
     <tr>
-        <td>[ �S���� ]�{�^��<br><img src="Image/Man050.png"></td>
+        <td>[ 全消去 ]ボタン<br><img src="Image/Man050.png"></td>
         <td>
-        �S�g���b�N�̉��t���e���폜���܂��B�@�C�ӂ̃g���b�N���e���폜����ɂ́A<strong>[���t�Ώۃg���b�N]</strong>�ŏ����Ώۂ̃g���b�N��I��ł���<strong>[�I������]</strong>�{�^�����g�p���܂��B
+        全トラックの演奏内容を削除します。　任意のトラック内容を削除するには、<strong>[演奏対象トラック]</strong>で消去対象のトラックを選んでから<strong>[選択消去]</strong>ボタンを使用します。
         </td>
     </tr>
     <tr>
-        <td>[ ���� ]<br><img src="Image/Man051.png"></td>
+        <td>[ 鍵盤 ]<br><img src="Image/Man051.png"></td>
         <td>
-        ���t�^�Đ��̍ہA�������̉��ɑΉ��������Ղ��Ԃ��_�����܂��B<br>
-        ���Չ��̃A���t�@�x�b�g�\�L�͉��K��\��<strong>[C]</strong>��<strong>[�h]</strong>�A<strong>[D]</strong>��<strong>[��]</strong>�A<strong>[B]</strong>��<strong>[�V]</strong>�ɑΉ����܂��B
+        演奏／再生の際、発声中の音に対応した鍵盤が赤く点灯します。<br>
+        鍵盤下のアルファベット表記は音階を表し<strong>[C]</strong>が<strong>[ド]</strong>、<strong>[D]</strong>が<strong>[レ]</strong>、<strong>[B]</strong>が<strong>[シ]</strong>に対応します。
         </td>
     </tr>
 </table>
 
 ***
-### ���b�Z�[�W�n�R���g���[��
+### メッセージ系コントロール
 ![Image052](Image/Man052.png)![Image053](Image/Man053.png)
 <table border="1">
     <caption></caption>
     <thead>
         <tr>
-            <th>�R���g���[������</th><th>����</th>
+            <th>コントロール名称</th><th>説明</th>
         </tr>
     </thead>
     <tr>
     <tr>
-        <td>[ ���� ]��<br><img src="Image/Man054.png"></td>
+        <td>[ 説明 ]欄<br><img src="Image/Man054.png"></td>
         <td>
-        �ȒP�Ȑ����̕\���̈�ł��B<br>
-        ��ʏ�̃{�^�����̃R���g���[����Ń}�E�X�E�N���b�N���鎖�ŁA�Ώۂ̍��ڂɊւ���������\������܂��B<br>
-        ����������ʓ��Ɏ��܂�Ȃ��ꍇ�́A�����������N���b�N���鎖�Ŗ��L�[�i���܂��́��j�ɂ��X�N���[�����\�ƂȂ�܂��B<br>
-        �ǂݏI�������ESC�L�[���������鎖�Œʏ푀��ɖ߂鎖���ł��܂��B
+        簡単な説明の表示領域です。<br>
+        画面上のボタン等のコントロール上でマウス右クリックする事で、対象の項目に関する説明が表示されます。<br>
+        説明文が画面内に収まらない場合は、説明欄を左クリックする事で矢印キー（↑または↓）によるスクロールが可能となります。<br>
+        読み終わったらESCキーを押下する事で通常操作に戻る事ができます。
         </td>
     </tr>
     <tr>
-        <td>[ ���b�Z�[�W ]��<br><img src="Image/Man055.png"></td>
+        <td>[ メッセージ ]欄<br><img src="Image/Man055.png"></td>
         <td>
-        �V�X�e������̃��b�Z�[�W���\������܂��B
+        システムからのメッセージが表示されます。
         </td>
     </tr>
 </table>
