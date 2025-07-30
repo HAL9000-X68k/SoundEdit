@@ -614,7 +614,8 @@ LFO(低周波発振器)から発生される波形を選択します。
         <td>[ 鍵盤 ]<br><img src="Image/Man051.png"></td>
         <td>
         演奏／再生の際、発声中の音に対応した鍵盤が赤く点灯します。<br>
-        鍵盤下のアルファベット表記は音階を表し<strong>[C]</strong>が<strong>[ド]</strong>、<strong>[D]</strong>が<strong>[レ]</strong>、<strong>[B]</strong>が<strong>[シ]</strong>に対応します。
+        鍵盤下のアルファベット表記は音階を表し<strong>[C]</strong>が<strong>[ド]</strong>、<strong>[D]</strong>が<strong>[レ]</strong>、<strong>[B]</strong>が<strong>[シ]</strong>に対応します。<br>
+        <strong>※現状、OPMDRV3環境下では再生時の鍵盤表示は機能致しません。</strong>
         </td>
     </tr>
 </table>
