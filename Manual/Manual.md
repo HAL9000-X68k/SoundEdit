@@ -1,8 +1,8 @@
-# 音色野郎　操作説明　(Version 1.20)
+# 音色野郎　操作説明　(Version 1.21)
 ***
 
 ## 目次
-- [音色野郎　操作説明　(Version 1.20)](#音色野郎操作説明version-120)
+- [音色野郎　操作説明　(Version 1.21)](#音色野郎操作説明version-121)
   - [目次](#目次)
   - [事前に準備が必要なソフトウェア](#事前に準備が必要なソフトウェア)
   - [始動後の画面](#始動後の画面)
@@ -33,6 +33,15 @@ Ver1.10より**Z-MUSIC Ver 2.08**を同梱していますので、こちらを�
 システムが起動すると、以下の画面が表示されます。
 ![Image001](Image/Man001.png)
 
+<strong>－編集中の簡易演奏について－</strong>
+始動直後から、現在編集中の音色のみキーボードからの簡易演奏を行い音色の状態を確認できます。
+なお、簡易演奏の際のキー操作に関しては後述の[コマンドボタン](###コマンドボタン)内の<strong>[演奏]ボタン</strong>の項をご参照ください。
+
+<strong>◆注意点◆</strong>
+<strong>[演奏]ボタン</strong>押下時の演奏モードのみ音色の切替が行えます。編集画面での簡易演奏モードでは現在編集中の音色のみを演奏対象とする為、<strong>音色の変更は行えません。</strong>
+
+また、簡易演奏モードは画面上の編集内容を反映する為に、画面上のパラメータ変更後は音源初期化の都合上、キー押下しても発声が遅れますので少し（１秒足らずですが）待ってからの操作をお勧めします。
+
 ## 音源ドライバ種別
 画面右上に、現在使用中の音源ドライバ種別が表示されます。
 
@@ -60,27 +69,30 @@ Ver1.10より**Z-MUSIC Ver 2.08**を同梱していますので、こちらを�
 <caption>ボタンの種類</caption>
 <thead>
 <tr>
-<th width="20%">ボタン名称</th><th>説明</th>
+<th>ボタン名称</th><th>説明</th>
 </tr>
 </thead>
 <tr>
-<td>[ Load ]ボタン<br><img src="Image/Man003.png"></td>
+<td>[ Load ]</td>
 <td>
+<img src="Image/Man003.png"><br>
 音色と演奏内容を記録したデータファイルを読み込みます。<br>
 入力ファイル名は「<strong>SaveData.dat</strong>」固定です。<br>
 データファイルが存在しないか読み込みに失敗した場合には、サンプルの音色データが設定されます。
 </td>
 </tr>
 <tr>
-<td>[ Save ]ボタン<br><img src="Image/Man004.png"></td>
+<td>[ Save ]</td>
 <td>
+<img src="Image/Man004.png"><br>
 音色と演奏内容をデータファイルに出力します。<br>
 出力ファイル名は「<strong>SaveData.dat</strong>」固定です。
 </td>
 </tr>
 <tr>
-<td>[ MML出力 ]ボタン<br><img src="Image/Man005.png"></td>
+<td>[ MML出力 ]</td>
 <td>
+<img src="Image/Man005.png"><br>
 音色と、記録した演奏内容をMMLデータとしてテキストファイルに出力します。<br>
 MML書式はZ-MUSIC Ver2.08の<strong>ZMS形式</strong>またはOPMDRV3の<strong>OPM形式</strong>に準拠しており、<br>
 <strong>Z-MUSIC Ver3.0との互換性はありません。</strong><br>
@@ -92,30 +104,34 @@ MML書式はZ-MUSIC Ver2.08の<strong>ZMS形式</strong>またはOPMDRV3の<stro
 </td>
 </tr>
 <tr>
-<td>[ 音色複製 ]ボタン<br><img src="Image/Man006.png"></td>
+<td>[ 音色複製 ]ボタン</td>
 <td>
+<img src="Image/Man006.png"><br>
 現在選択している音色データを複製します。<br>
 複製された音色データは、現在登録されている音色データ群の末尾に追加されます。
 </td>
 </tr>
 <tr>
-<td>[ 新規音色 ]ボタン<br><img src="Image/Man007.png"></td>
+<td>[ 新規音色 ]ボタン</td>
 <td>
+<img src="Image/Man007.png"><br>
 音色データを新規作成します。<br>
 新規追加された音色データには、あらかじめサンプルの音色パラメータが設定されています。<br>
 作成された音色データは、現在登録されている音色データ群の末尾に追加されます。</td>
 </tr>
 <tr>
-<td>[ 音色削除 ]ボタン<br><img src="Image/Man008.png"></td>
+<td>[ 音色削除 ]ボタン</td>
 <td>
+<img src="Image/Man008.png"><br>
 現在選択している音色データを削除します。<br>
 削除したデータ以降の音色番号は再度発番される為、演奏を記録した後に音色を削除すると<br>
 正しく演奏されなくなる可能性があります。
 </td>
 </tr>
 <tr>
-<td>[ 演奏 ]ボタン<br><img src="Image/Man009.png"></td>
+<td>[ 演奏 ]ボタン</td>
 <td>
+<img src="Image/Man009.png"><br>
 キーボードによる演奏を行います。<br>
 演奏開始時点で選択中の音色が使用されますが、キーボードからの操作で演奏に使用する<br>
 音色や音階をリアルタイムで切り替える事ができます。<br>
@@ -175,15 +191,17 @@ MML書式はZ-MUSIC Ver2.08の<strong>ZMS形式</strong>またはOPMDRV3の<stro
 </td>
 </tr>
 <tr>
-<td>[ 再生 ]ボタン<br><img src="Image/Man010.png"></td>
+<td>[ 再生 ]ボタン</td>
 <td>
+<img src="Image/Man010.png"><br>
 [記録]ボタンで記録した演奏内容を自動演奏で再生します。<br>
 その際、<strong>[発声対象トラック]</strong>で選択されているトラックのみ発声します。
 </td>
 </tr>
 <tr>
-<td>[ 記録 ]ボタン<br><img src="Image/Man011.png"></td>
+<td>[ 記録 ]ボタン</td>
 <td>
+<img src="Image/Man011.png"><br>
 キーボードでの演奏を記録します。<br>
 記録は<strong>[TRACK]</strong>または<strong>[演奏対象トラック]</strong>で選択されたトラックに対して行われます。
 X68000のFM音源は最大8つのトラックを持っており最大8重和音での演奏が可能ですが<br>
@@ -194,8 +212,9 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
 </td>
 </tr>
 <tr>
-<td>[ 終了 ]ボタン<br><img src="Image/Man012.png"></td>
+<td>[ 終了 ]ボタン</td>
 <td>
+<img src="Image/Man012.png"><br>
 本ソフトウェアを終了します。<br>
 編集中のデータは失われるので、事前に保存して下さい。
 </td>
@@ -215,8 +234,9 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
         </tr>
     </thead>
     <tr>
-        <td width="20%">[ 音色番号 ]欄<br><img src="Image/Man014.png"></td>
-        <td>現在編集中の音色番号を表示します。<br>
+        <td>[ 音色番号 ]欄</td>
+        <td><img src="Image/Man014.png"><br>
+        現在編集中の音色番号を表示します。<br>
         表示は「音色番号／音色総数」形式となっており「音色番号」が現在選択し編集中の<br>
         音色番号、「音色総数」が現在システムに登録されている音色の総数を表し、<br>
         入力／選択できるのは、この音色総数が上限となります。<br>
@@ -228,8 +248,9 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
         （▲ボタンの上で左右のボタン操作のみで値を上下できます）</td>
     </tr>
     <tr>
-        <td>[ 音色バンク ]欄<br><img src="Image/Man015.png"></td>
+        <td>[ 音色バンク ]欄</td>
         <td>
+            <img src="Image/Man015.png"><br>
             登録されている音色をキーボードに割り当てる入力欄です。<br>
             登録されている音色のうち最大10個までをキーボードでの音色切替に割り当てる事ができ、<br>
             その内訳が表示されます。　ラベル番号の「1」～「0」が、<br>
@@ -255,8 +276,9 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
         </td>
     </tr>
     <tr>
-        <td>[ OM ]欄<br><img src="Image/Man016.png"></td>
+        <td>[ OM ]欄</td>
         <td>
+        <img src="Image/Man016.png"><br>
         ースロットマスクー<br>
         オペレータのON/OFFを設定します。　<strong>[M1]</strong>～<strong>[C2]</strong>の４つあるオペレータに対してONとOFFを設定します。　左横に<strong>[M1]</strong>～<strong>[C2]</strong>のオペレータ名が表示されており、それぞれ個別にON/OFFを設定できます。<br>
         ON状態で<img src="Image/Man060.png">が表示され、OFF状態で<img src="Image/Man059.png">が表示されます。<br>
@@ -264,8 +286,9 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
         </td>
     </tr>
     <tr>
-        <td>[ AR ]欄<br><img src="Image/Man017.png"></td>
+        <td>[ AR ]欄</td>
         <td>
+        <img src="Image/Man017.png"><br>
         ーアタックレートー<br>
         キーオン（音が発生する瞬間のこと）されてから、<br>
         音の出力が最大になるまでの速度を指定します。<br>
@@ -276,8 +299,9 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
         </td>
     </tr>
     <tr>
-        <td>[ DR ]欄<br><img src="Image/Man018.png"></td>
+        <td>[ DR ]欄</td>
         <td>
+        <img src="Image/Man018.png"><br>
         ーFirst Decay Rateー<br>
         <strong>[D1R]</strong>や<strong>[1DR]</strong>とも表記されます。<br>
         出力レベルが最大になってから、<strong>[SL]</strong>で設定したレベルに下がるまでの速度を設定します。<br>
@@ -288,8 +312,9 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
         </td>
     </tr>
     <tr>
-        <td>[ SR ]欄<br><img src="Image/Man019.png"></td>
+        <td>[ SR ]欄</td>
         <td>
+        <img src="Image/Man019.png"><br>
         －Second Dacey Rate－<br>
         <strong>[D2R]</strong>や<strong>[2DR]</strong>とも表記されます。<br>
         <strong>[SL]</strong>で指定した出力レベルになってから、キーオフ（鍵盤を放す）されるまでの速度を設定します。　入力値の範囲は0～31です。<br>
@@ -300,8 +325,9 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
         </td>
     </tr>
     <tr>
-        <td>[ RR ]欄<br><img src="Image/Man020.png"></td>
+        <td>[ RR ]欄</td>
         <td>
+        <img src="Image/Man020.png"><br>
         －Release Rate－<br>
         キーオフ（鍵盤を放す）されてから音が消えるまでの速度を設定します。　数値が大きくなるほど、キーオフしてからの音の減衰が速くなります。　入力値の範囲は0～15です。<br>
         値を大きくすると鍵盤を押している間のみ鳴るような、後を引かずにピタリと止まるような音の出方になり、逆に値を小さくすると鍵盤を放した後も余韻を残すような音の出方になります。<br>
@@ -309,8 +335,9 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
         </td>
     </tr>
     <tr>
-        <td>[ SL ]欄<br><img src="Image/Man021.png"></td>
+        <td>[ SL ]欄</td>
         <td>
+        <img src="Image/Man021.png"><br>
         －First Decay Level－<br>
         <strong>[D1L]</strong>や<strong>[1DL]</strong>とも表記されます。<br>
         <strong>[DR]</strong>から<strong>[SR]</strong>に移る閾値となる出力レベルを設定します。　入力値の範囲は0～15です。<br>
@@ -330,8 +357,9 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
         </td>
     </tr>
     <tr>
-        <td>[ OL ]欄<br><img src="Image/Man022.png"></td>
+        <td>[ OL ]欄</td>
         <td>
+        <img src="Image/Man022.png"><br>
         －Output Level(Total Level)－<br>
         <strong>[TL]</strong>とも表記されます。<br>
         音色および音量を制御する為の、各オペレータにおける<strong>EG</strong>のトータル出力レベルを設定します。　入力値の範囲は0～127です。<br>
@@ -348,24 +376,27 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
         </td>
     </tr>
     <tr>
-        <td>[ KS ]欄<br><img src="Image/Man023.png"></td>
+        <td>[ KS ]欄</td>
         <td>
+        <img src="Image/Man023.png"><br>
         －Key Scaling－<br>
         音の高さ（キーコード）によって、エンベロープ(出力波形)の長さを変化させます。　入力値の範囲は0～3です。<br>
         数値が大きくなるほど、高音域でのエンベロープの長さが短くなり、音色が鋭くなります。
         </td>
     </tr>
     <tr>
-        <td>[ ML ]欄<br><img src="Image/Man024.png"></td>
+        <td>[ ML ]欄</td>
         <td>
+        <img src="Image/Man024.png"><br>
         －Phase Multiply－<br>
         <strong>[M1]</strong>～<strong>[C2]</strong>の各オペレータ周波数を設定します。　入力値の範囲は0～15です。<br>
         設定値は、鍵盤標準ピッチに対する周波数の比を表します。(0の場合は1/2の周波数)
         </td>
     </tr>
     <tr>
-        <td>[ DT1 ]欄<br><img src="Image/Man025.png"></td>
+        <td>[ DT1 ]欄</td>
         <td>
+        <img src="Image/Man025.png"><br>
         －Detune 1－<br>
         <strong>[M1]</strong>～<strong>[C2]</strong>各オペレータのピッチを微妙にずらす事により、音の波の緩衝作用を起こして音に広がりを与えます。　入力値の範囲は0～7です。
         <dl>
@@ -381,8 +412,9 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
         </td>
     </tr>
     <tr>
-        <td>[ DT2 ]欄<br><img src="Image/Man026.png"></td>
+        <td>[ DT2 ]欄</td>
         <td>
+        <img src="Image/Man026.png"><br>
         －Detune 2－<br>
         <strong>[M1]</strong>～<strong>[C2]</strong>各オペレータの周波数比を非整数倍にしたい場合に設定します。　入力値の範囲は0～3です。<br>
         値を設定する事で、<strong>[MUL]</strong>で指定された周波数を以下のように変更します。
@@ -396,8 +428,9 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
         </td>
     </tr>
     <tr>
-        <td>[ AME ]欄<br><img src="Image/Man027.png"></td>
+        <td>[ AME ]欄</td>
         <td>
+        <img src="Image/Man027.png"><br>
         －AMS Enable－<br>
         <strong>[M1]</strong>～<strong>[C2]</strong>各オペレータのAMSをON/OFFします。
         ONにする事で<strong>[AMS]</strong>に設定したLFOの感度が有効になります。
@@ -418,8 +451,9 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
         </tr>
     </thead>
     <tr>
-        <td width="20%">[ AL ]欄<br><img src="Image/Man029.png"></td>
+        <td>[ AL ]欄</td>
         <td>
+        <img src="Image/Man029.png"><br>
         －Algorithm－<br>
         各チャンネル毎の４つのオペレータ(<strong>[M1]</strong>～<strong>[C2]</strong>)の組み合わせを設定します。<br>
         入力値の範囲は0～7の8種類で、設定値に対応した組み合わせが<strong>[ｱﾙｺﾞﾘｽﾞﾑ]</strong>欄に<br>
@@ -431,8 +465,20 @@ X68000のFM音源は最大8つのトラックを持っており最大8重和音�
         </td>
     </tr>
     <tr>
-        <td>[ FB ]欄<br><img src="Image/Man030.png"></td>
+        <td>[切替]欄</td>
         <td>
+        <img src="Image/Man061.png"><br>
+        アルゴリズム、Envelope Generatorのオペレータ表記をSHARPのマニュアルに<br>
+        記載されている形式（M1～C2）と、シンセサイザ等で用いられる形式（1～4）<br>
+        とで切り替えます。<br>
+        見た目が変化するだけなので、実際にはパラメータの値や音色に違いは出ま<br>
+        せん。
+        </td>
+    </tr>
+    <tr>
+        <td>[ FB ]欄</td>
+        <td>
+        <img src="Image/Man030.png"><br>
         －Feed Back－<br>
         各チャンネル毎の最初のオペレータの出力を、そのオペレータ自身に戻す事により１つのオペレータだけで変調が行えます。　入力値の範囲は0～7の8段階です。<br>
         数値が大きくなるほど大きく変調されて高周波成分が増え、音色が大きく変わります。
@@ -463,17 +509,19 @@ LFO（低周波発振器）関連のパラメータ欄について解説しま�
         </tr>
     </thead>
     <tr>
-        <td width="20%">[ WF ]欄<br><img src="Image/Man033.png"></td>
+        <td>[ WF ]欄</td>
         <td>
-－Wave Form－<br>
-LFO(低周波発振器)から発生される波形を選択します。
-波形の違いにより、音量や音色の変化の仕方が変わります。
-入力値の範囲は0～3の4種類で、選択した波形は<strong>[ウェーブフォーム]</strong>欄の<strong>[音程][音量]</strong>グラフに表示されます。
+        <img src="Image/Man033.png"><br>
+        －Wave Form－<br>
+        LFO(低周波発振器)から発生される波形を選択します。
+        波形の違いにより、音量や音色の変化の仕方が変わります。
+        入力値の範囲は0～3の4種類で、選択した波形は<strong>[ウェーブフォーム]</strong>欄の<strong>[音程][音量]</strong>グラフに表示されます。
         </td>
     </tr>
     <tr>
-        <td>[ SYC ]欄<br><img src="Image/Man034.png"></td>
+        <td>[ SYC ]欄</td>
         <td>
+        <img src="Image/Man034.png"><br>
         －Synchro－<br>
         LFOのスタートとキーオン(音が発生される瞬間)を同期(シンクロ)をON/OFFします。
         ONにする事で音が発生するたびにビブラートやトレモロ等の効果が<br>
@@ -495,16 +543,18 @@ LFO(低周波発振器)から発生される波形を選択します。
         </td>
     </tr>
     <tr>
-        <td>[ SPD ]欄<br><img src="Image/Man035.png"></td>
+        <td>[ SPD ]欄</td>
         <td>
+        <img src="Image/Man035.png"><br>
         －Speed－<br>
         LFOの発振周波数(ビブラートやトレモロ効果の速さ)を設定します。　入力値の範囲は0～255です。<br>
         0～255の値は約0.009～59Hzに対応し数値が大きくなるほど周波数が高くなりスピードが上がります。
         </td>
     </tr>
     <tr>
-        <td>[ PMD ]欄<br><img src="Image/Man036.png"></td>
+        <td>[ PMD ]欄</td>
         <td>
+        <img src="Image/Man036.png"><br>
         －Pitch Modulation Depth－<br>
         音程への周波数変調に対してかけるLFOの出力レベルを設定します。<br>
         0(出力レベル小)→127(出力レベル大)<br>
@@ -512,8 +562,9 @@ LFO(低周波発振器)から発生される波形を選択します。
         </td>
     </tr>
     <tr>
-        <td>[ AMD ]欄<br><img src="Image/Man037.png"></td>
+        <td>[ AMD ]欄</td>
         <td>
+        <img src="Image/Man037.png"><br>
         －Amplitude Modulation Depth－<br>
         音量の振幅変調に対してかけられるLFOの出力レベルを設定します。<br>
         0(出力レベル小)→127(出力レベル大)<br>
@@ -521,8 +572,9 @@ LFO(低周波発振器)から発生される波形を選択します。
         </td>
     </tr>
     <tr>
-        <td>[ PMS ]欄<br><img src="Image/Man038.png"></td>
+        <td>[ PMS ]欄</td>
         <td>
+        <img src="Image/Man038.png"><br>
         －Pitch Modulation Sensitivity－<br>
         各チャンネル毎の音程への周波数変調に対してかける LFO の感度を設定します。<br>
         0(感度小)→7(感度大)<br>
@@ -530,8 +582,9 @@ LFO(低周波発振器)から発生される波形を選択します。
         </td>
     </tr>
     <tr>
-        <td>[ AMS ]欄<br><img src="Image/Man039.png"></td>
+        <td>[ AMS ]欄</td>
         <td>
+        <img src="Image/Man039.png"><br>
         －Amplitude Modulation Sensitivity－<br>
         各チャンネル毎の音量の振幅変調に対してかけるLFOの感度を設定します。　入力値の範囲は0～3で、数値が大きくなるほど感度は大きくなります。<br>
         0(感度小)→3(感度大)
@@ -551,16 +604,18 @@ LFO(低周波発振器)から発生される波形を選択します。
         </tr>
     </thead>
     <tr>
-        <td>[ Tempo ]欄<br><img src="Image/Man041.png"></td>
+        <td>[ Tempo ]欄</td>
         <td>
+        <img src="Image/Man041.png"><br>
         曲のテンポを設定します。　入力値の範囲は30～200です。<br>
         テンポは１分間に鳴る４分音符の数で表され、初期値は120です。<br>
         数値が大きくなるほど曲調が速くなり、逆に小さくする事でゆっくりとした曲になって行きます。
         </td>
     </tr>
     <tr>
-        <td>[ Pan ]欄<br><img src="Image/Man042.png"></td>
+        <td>[ Pan ]欄</td>
         <td>
+        <img src="Image/Man042.png"><br>
         －Pan pot－<br>
         音の出力方式を設定します。<br>
         値の範囲は0～3ですが、画面上では数値の直接入力は行わず以下の選択肢から選ぶようになっています。<br>
@@ -592,8 +647,9 @@ LFO(低周波発振器)から発生される波形を選択します。
         </tr>
     </thead>
     <tr>
-        <td>[ コメント ]欄<br><img src="Image/Man044.png"></td>
+        <td>[ コメント ]欄</td>
         <td>
+        <img src="Image/Man044.png"><br>
         編集中の音色データに関するコメントを表示／編集します。　新規作成時には初期値として「サンプル音色(Base)」が設定されています。<br>
         設定できるコメント文字列は最大96文字で全角半角文字の混在が可能です。<br>
         設定したコメントは音色データおよびMMLデータにも保存・反映されます。
@@ -613,8 +669,9 @@ LFO(低周波発振器)から発生される波形を選択します。
         </tr>
     </thead>
     <tr>
-        <td>[ TRACK ]欄<br><img src="Image/Man046.png"></td>
+        <td>[ TRACK ]欄</td>
         <td>
+        <img src="Image/Man046.png"><br>
         トラック番号を入力する事で、演奏対象<strong>n</strong>のトラックを切り替えます。<br>
         トラック番号は1～8まで選択でき、選択中のトラックが記録の対象とな
         ります。<br>
@@ -622,34 +679,39 @@ LFO(低周波発振器)から発生される波形を選択します。
         </td>
     </tr>
     <tr>
-        <td>[ 発声対象トラック ]欄<br><img src="Image/Man047.png"></td>
+        <td>[ 発声対象トラック ]欄</td>
         <td>
+        <img src="Image/Man047.png"><br>
         再生時や、記録時に発声させるトラックを指定します。　OFFに設定したトラックは、再生時および記録時に発声しません。
         </td>
     </tr>
     <tr>
-        <td>[ 演奏対象トラック ]欄<br><img src="Image/Man048.png"></td>
+        <td>[ 演奏対象トラック ]欄</td>
         <td>
+        <img src="Image/Man048.png"><br>
         演奏、記録の対象とするトラックを指定します。　記録時は、選択したトラックに演奏
         内容が記録されます。
         </td>
     </tr>
     <tr>
-        <td>[ 選択消去 ]ボタン<br><img src="Image/Man049.png"></td>
+        <td>[ 選択消去 ]ボタン</td>
         <td>
+        <img src="Image/Man049.png"><br>
         <strong>[演奏対象トラック]</strong>で選択されているトラックの演奏内容を削除します。<br>
         全てのトラック内容を削除するには、<strong>[全消去]</strong>ボタンを使用します。
         </td>
     </tr>
     <tr>
-        <td>[ 全消去 ]ボタン<br><img src="Image/Man050.png"></td>
+        <td>[ 全消去 ]ボタン</td>
         <td>
+        <img src="Image/Man050.png"><br>
         全トラックの演奏内容を削除します。　任意のトラック内容を削除するには、<strong>[演奏対象トラック]</strong>で消去対象のトラックを選んでから<strong>[選択消去]</strong>ボタンを使用します。
         </td>
     </tr>
     <tr>
-        <td>[ 鍵盤 ]<br><img src="Image/Man051.png"></td>
+        <td>[ 鍵盤 ]</td>
         <td>
+        <img src="Image/Man051.png"><br>
         演奏／再生の際、発声中の音に対応した鍵盤が赤く点灯します。<br>
         鍵盤下のアルファベット表記は音階を表し<strong>[C]</strong>が<strong>[ド]</strong>、<strong>[D]</strong>が<strong>[レ]</strong>、<strong>[B]</strong>が<strong>[シ]</strong>に対応します。<br>
         <strong>※現状、OPMDRV3環境下では再生時の鍵盤表示は機能致しません。</strong>
@@ -669,8 +731,9 @@ LFO(低周波発振器)から発生される波形を選択します。
     </thead>
     <tr>
     <tr>
-        <td>[ 説明 ]欄<br><img src="Image/Man054.png"></td>
+        <td>[ 説明 ]欄</td>
         <td>
+        <img src="Image/Man054.png"><br>
         簡単な説明の表示領域です。<br>
         画面上のボタン等のコントロール上で<strong>CTRLキーを押しながら</strong>マウス右クリックする事で、対象の項目に関する説明が表示されます。<br>
         説明文が画面内に収まらない場合は、説明欄を左クリックする事で矢印キー（↑または↓）によるスクロールが可能となります。<br>
@@ -678,8 +741,9 @@ LFO(低周波発振器)から発生される波形を選択します。
         </td>
     </tr>
     <tr>
-        <td>[ メッセージ ]欄<br><img src="Image/Man055.png"></td>
+        <td>[ メッセージ ]欄</td>
         <td>
+        <img src="Image/Man055.png"><br>
         システムからのメッセージが表示されます。
         </td>
     </tr>
