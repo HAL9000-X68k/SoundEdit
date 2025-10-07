@@ -63,7 +63,7 @@ Version 1.21 -リリース版-
   <img src="Manual/Image/Man034.png"><br>
   クリックする事でON/OFFを切り替える事が可能です。
   「ON」の場合には<img src="Manual/Image/Man060.png">が表示され、「OFF」の際には<img src="Manual/Image/Man059.png">が表示されます。
-- 簡単なヘルプ機能が実装されており、ボタン等の上でマウス右クリックする事で簡単な説明が表示されます。
+- 簡単なヘルプ機能が実装されており、<strong>CTRLキーを押しながら</strong>ボタン等の上でマウス右クリックする事で簡単な説明が表示されます。
 
 ## 参考文献
 - SHARP X68000 X-BASIC ver 2.0 ユーザーズリファレンス<br>
