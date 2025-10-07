@@ -49,20 +49,20 @@ Version 1.21 -リリース版-
 
 ## 操作
 - 現状では、原則としてマウスでの操作が主体となります。<br>
-- 本ドキュメントではボタン類の大まかな説明にとどめていますので、詳細は別資料[「操作説明」](Manual/Manual.md)をご参照ください。
+- 本ドキュメントではボタン類の大まかな説明にとどめていますので、詳細は別資料[「操作説明」](../Manual/Manual.md)をご参照ください。
   ### [ボタン]
-  <img src="Manual/Image/Man003.png"><br>
+  <img src="../Manual/Image/Man003.png"><br>
   画面上部に並んだボタンで、クリックする事で個々の機能が働きます。<br><br>
   ### [スピンボタン]
-  <img src="Manual/Image/Man014.png"><br>
+  <img src="../Manual/Image/Man014.png"><br>
   数値欄と、その隣の上下矢印ボタンで構成されています。<br>
   数値欄への直接手入力と、矢印ボタンをクリックする事で値の増減が可能です。また、直接入力中にカーソル（矢印）キーの上下を押下しても値の増減が可能です。<br>
   更に、どちらのボタンの上でも右ボタンをクリックする事で値を下げられます。<br>
   （▲ボタンの上であれば、左右ボタンのみで値を上下させられます。）<br><br>
   ### [トグルボタン]
-  <img src="Manual/Image/Man034.png"><br>
+  <img src="../Manual/Image/Man034.png"><br>
   クリックする事でON/OFFを切り替える事が可能です。
-  「ON」の場合には<img src="Manual/Image/Man060.png">が表示され、「OFF」の際には<img src="Manual/Image/Man059.png">が表示されます。
+  「ON」の場合には<img src="../Manual/Image/Man060.png">が表示され、「OFF」の際には<img src="../Manual/Image/Man059.png">が表示されます。
 - 簡単なヘルプ機能が実装されており、ボタン等の上でマウス右クリックする事で簡単な説明が表示されます。
 
 ## 参考文献
